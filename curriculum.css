@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {padding-top: 50px;
+  font-family: Arial, sans-serif;
+  background:#060606;
+  background-image:url("circulos.jpg");
+  background-position: 50% 50%;
+  color: #fff;
+
+}
+
+/*
+.night{ filter: blur(0.1vmin);
+  background-image: radial-gradient(
+      ellipse at top,
+      transparent 0%,
+      var(--dark-color)
+    ),
+    radial-gradient(
+      ellipse at bottom,
+      var(--dark-color),
+      rgba(145, 233, 255, 0.2)
+    ),
+    repeating-linear-gradient(
+      220deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      189deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      148deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+}*/
+
+
+a{text-decoration:none;}
+a:hover {  transform: scale(1.1);}
+
+svg{width:20px;
+  height:20px;
+  font-size: 24px;
+  font-weight: bold;
+color:lightblue;}
+
+/*.header{ background-image:url("flor.jpg") ;}
+*/
+
+.container {
+ /* background-image:url("libro.jpg");*/
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 255, 255, 0.568);
+  border-radius: 10px;
+   display: flex;
+  justify-content: center;
+ /* align-items: center;
+ */
+}
+
+.left-column {
+  /*background:#012101;*/
+  background: transparent;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex: 27.5;
+  padding: 30px;
+}
+
+.right-column {
+  background: transparent;
+  backdrop-filter: blur(3px);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+ /* background-color: #010141;*/
+  
+  
+  flex: 72.5;
+  padding: 30px;
+ 
+}
+
+
+
+
+
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #0072c6;
+}
+
+button {
+  background-color: #0072c6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover { transform: scale(1.1);
+  box-shadow: 0 0 24px 0;
+  background-color: #005ea2;
+}
+
+
+
+/* Estilos para la primera columna */
+
+
+
+.first-column h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.first-column p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la segunda columna */
+
+
+
+.second-column h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.second-column ul {
+  margin-bottom: 20px;
+}
+
+.second-column li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el bot��n de descarga */
+
+.container2{/*background:#060606;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+.download-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.download-button a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.download-button button {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+.btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+  display: block;
+  }
+  
+  .left-column {
+    background:#012101;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 30px;
+  }
+  
+  .right-column {  
+    background:#060606;
+    padding: 30px;
+}
+}
