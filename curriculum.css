@@ -41,17 +41,19 @@ body {
   padding: 30px;
 }
 
-.right-column {
-  border-radius: 50px 50px 50px 50px;
-  flex: 72.5;
-}
-
 .left-column {
  /* backdrop-filter: blur(3px);*/
   box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
   border-radius: 0 50px 50px 0;
   flex: 27.5;
 }
+
+
+.right-column {
+  border-radius: 50px 50px 50px 50px;
+  flex: 72.5;
+}
+
 
 
 
