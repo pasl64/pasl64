@@ -9,7 +9,6 @@
 
 body {padding-top: 50px;
   font-family: Arial, sans-serif;
-  background:#060606;
   background-image:url("circulos.jpg");
   background-position: 50% 50%;
   color: #fff;
@@ -21,18 +20,15 @@ body {padding-top: 50px;
 
 
 .container {
- /* background-image:url("libro.jpg");*/
+ 
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 255, 255, 0.568);
   border-radius: 10px;
   display: flex;
   justify-content: center;
- /* align-items: center;
- */
 }
 
 .left-column {
-  /*background:#012101;*/
   background: transparent;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -48,17 +44,13 @@ body {padding-top: 50px;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
   border-radius: 10px;
- /* background-color: #010141;*/
-  
-  
   flex: 72.5;
   padding: 30px;
- 
 }
 
 
 a {text-decoration:none;}
-a:hover {  transform: scale(1.1);}
+
 
 svg{width:20px;
   height:20px;
@@ -85,20 +77,19 @@ h2 {
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
 
 a {
   color: #0072c6;
 }
 
 button {
-  background-color: #0072c6;
+  
+  background-color: #333536;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -109,8 +100,7 @@ button {
 }
 
 button:hover { transform: scale(1.1);
-  box-shadow: 0 0 24px 0;
-  background-color: #005ea2;
+  box-shadow: 0 0 4px 0;
 }
 
 
@@ -151,9 +141,63 @@ button:hover { transform: scale(1.1);
   margin-bottom: 10px;
 }
 
+
+/* Estilos para anexo*/
+
+.container1 {
+  min-height: 400px;
+   box-sizing: border-box;
+   box-shadow: 0 15px 25px rgba(0, 255, 255, 0.568);
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-around;
+ 
+ }
+
+
+
+.acordeon{padding: 10px; }
+
+.acordeon li {list-style:inside;}
+.btn-acordeon{display: none;}
+ 
+.acordeon label {box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 255, 255, 0.568);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+
+.contenido-acordeon {
+  margin: 5px;
+  max-height: 0px;
+  max-width: 0px;
+  overflow:hidden; 
+  transition: all 600ms ease;}
+
+
+
+
+.btn-acordeon0{display: none;}
+
+.btn-acordeon:checked ~  .contenido-acordeon{ 
+  max-height: 600px;
+  max-width: 600px;
+  padding: 15px 0px;
+
+}
+
+.btn-acordeon:checked ~  .btn-acordeon0{ display:block}
+
+
+
+
+
+
+
 /* Estilos para el bot��n de descarga */
 
-.container2{/*background:#060606;*/
+.container2{
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -182,7 +226,10 @@ button:hover { transform: scale(1.1);
 
 .btn {
   display: inline-block;
-  background-color: #614caf;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px rgba(0, 255, 255, 0.568);
+  border-radius: 10px;
+  padding: 10px;
   color: #fff;
   padding: 8px 16px;
   font-size: 16px;
@@ -191,14 +238,13 @@ button:hover { transform: scale(1.1);
   border-radius: 4px;
 }
 
-.btn:hover {
-  background-color: #600fca;
-}
 
 .btn:active {
-  background-color: #511d96;
   transform: translateY(2px);
 }
+
+
+
 
 
 @media screen and (max-width: 600px) {
@@ -216,7 +262,11 @@ button:hover { transform: scale(1.1);
   
   .right-column {  
     padding: 30px;
+  }
+
+  .container1 { 
+      display: block;
+    min-height: 600px;
+      
 }
 }
-
-
